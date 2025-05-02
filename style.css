@@ -1,0 +1,312 @@
+/* === DUNGEON FRAMING === */
+body.dungeon-frame {
+  background-color: #000;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body.dungeon-frame.murals-theme {
+  background-color: #000;
+  color: #A020F0;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body.dungeon-frame.noscroll {
+  overflow: hidden;
+}
+
+
+/* === PAGE LAYOUT SECTION === */
+.themed-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* === TITLE SCREEN === */
+.title-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+
+.logo-title {
+  font-size: 10vw;
+  margin: 0;
+}
+
+.enter-text {
+  font-size: 2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  animation: flicker 1.5s infinite alternate;
+}
+
+/* === HUB PAGE === */
+.hub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* <— lifts the content */
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 20vh;  /* <— adds space at the top */
+  padding-bottom: 4vh;
+}
+
+.hub-title {
+  font-size: 5vw;
+  margin-bottom: 2rem;
+}
+
+.hub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hub-link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #39FF14;
+  animation: flicker 1.5s infinite alternate;
+  transition: transform 0.2s;
+}
+
+.hub-link:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 6px #39FF14;
+}
+
+/* HUB SELECTION COLORS */
+
+.hub-link.murals-theme:hover {
+  text-shadow: 0 0 8px #A020F0;
+  color: #A020F0;
+}
+
+.hub-link.music-theme:hover {
+  text-shadow: 0 0 8px #FF69B4;
+  color: #FF69B4;
+}
+
+.hub-link.techlore-theme:hover {
+  text-shadow: 0 0 8px #00BFFF;
+  color: #00BFFF;
+}
+
+.hub-link.sieve-theme:hover {
+  text-shadow: 0 0 8px gold;
+  color: gold;
+}
+
+/* === PAGE COLORZ === */
+.murals-theme {
+  color: #A020F0; /* Royal Purple */
+}
+
+.music-theme {
+  color: #FF69B4; /* Bubblegum Pink */
+}
+
+.techlore-theme {
+  color: #00BFFF; /* Electrifying Blue */
+}
+
+.sieve-theme {
+  color: gold; /* Prestigious Glow */
+}
+
+.dungeon-theme {
+  color: #FF4500; }  /* Torch default */
+
+
+/* === MURALS PAGE === */
+
+.cielito-link:link,
+.cielito-link:visited {
+  color: #39FF14; /* Neon green */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.cielito-link:hover,
+.cielito-link:active {
+  color: #ffffff;
+  text-shadow: 0 0 6px #39FF14;
+}
+
+.mural-gif {
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid #A020F0;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.murals {
+  background-color: #000;
+  color: #A020F0;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.murals-title {
+  font-size: 5vw;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-header {
+  font-size: 2rem;
+  margin: 2rem 0 1.5rem;
+  color: #A020F0;
+  border-bottom: 1px solid #A020F0;
+  padding-bottom: 0.5rem;
+}
+
+.mural-entry {
+  margin-bottom: 4rem;
+}
+
+.mural-entry h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.mural-entry img {
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid #A020F0;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: #c0a0ff;
+  margin-top: 0.5rem;
+}
+
+/* === MURALZ CTA === */
+.mural-call {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid #A020F0;
+}
+
+
+.call-title {
+  font-size: 2rem;
+  color: #A020F0;
+  margin-bottom: 1rem;
+}
+
+.call-text {
+  color: #d891ff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.call-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #A020F0;
+  color: #000;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.call-button:hover {
+  background-color: #66ff66;
+  box-shadow: 0 0 10px #A020F0;
+}
+
+footer {
+  height: 1px;
+}
+
+/* === SHARED ANIMATION === */
+@keyframes flicker {
+  0% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+
+
+
+/* RETURN GATES !!! */
+
+
+
+
+/* === RETURN GATE FUNCTION === */
+.return-gate {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  animation: flicker 2s infinite alternate;
+  z-index: 999; /* ensures it floats on top */
+}
+
+.return-gate:hover {
+  background-color: #39FF14;
+  color: #000;
+  box-shadow: 0 0 12px #39FF14, 0 0 24px #39FF14;
+  transform: scale(1.05);
+}
+
+/* === RETURN GATE AESTHETIC === */
+.return-gate {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  animation: flicker 2s infinite alternate;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.murals-theme .return-gate {
+  color: #A020F0;
+  border: 2px solid #A020F0;
+}
+.music-theme .return-gate {
+  color: #FF69B4;
+  border: 2px solid #FF69B4;
+}
+.techlore-theme .return-gate {
+  color: #00BFFF;
+  border: 2px solid #00BFFF;
+}
+.sieve-theme .return-gate {
+  color: gold;
+  border: 2px solid gold;
+}
